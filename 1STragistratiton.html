@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;    
+            align-items: center;
+            height: 100vh;
+        }
+        /* .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left;
+        } */
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label,input{
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+        }
+        input[type="text"], input[type="tel"], input[type="number"], input[type="date"], input[type="file"], select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            display: inline-block;
+            width: auto;
+            margin-right: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+    
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Registration Form</h1>
+        <hr>
+        <label for="text">Set Username ID:</label>
+        <input type="text">
+
+        <label for="text">Set Password:</label>
+        <input type="text">
+        
+        <label for="Gender">Select Gender:</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        
+        <label for="mobile">Enter Mobile Number:</label>
+        <input type="tel">
+        
+        <label for="age">Enter Age:</label>
+        <input type="number">
+        
+        <label for="city">City:</label>
+        <select name="City">
+            <option value="9">Select City</option>
+            <option value="1">Nagpur</option>
+            <option value="2">Wardha</option>
+            <option value="3">Katol</option>
+            <option value="4">Saoner</option>
+        </select>
+        
+        <label for="date">Select Date:</label>
+        <input type="date">
+        
+        <label for="file">Select File:</label>
+        <input type="file">
+        
+        <input type="button" onclick="alertSubmission()"  value="Submit">
+       
+    </div>
+</body>
+<script>
+    function alertSubmission(){
+    
+    window.location.href="http://127.0.0.1:5500/JAVASCRIPT/ENDPROJECT/2NDlogin.html"
+      
+    }
+</script>
+</html>
